@@ -421,6 +421,37 @@ def advance_phase():
             ]
     }
 
+@app.post("/rollback-phase")
+def rollback_phase():
+
+    current_phase = _campaign_state.get(
+        "current_phase",
+        "Pilot"
+    )
+
+    if current_phase == "Phase 2":
+
+        _campaign_state["current_phase"] = "Phase 1"
+
+    elif current_phase == "Phase 1":
+
+        _campaign_state["current_phase"] = "Pilot"
+
+    else:
+
+        return {
+            "message": "Already at Pilot phase.",
+            "current_phase": current_phase
+        }
+
+    update_state_timestamp()
+
+    return {
+        "message": "Rollout phase rolled back successfully.",
+        "current_phase": _campaign_state["current_phase"],
+        "last_updated": _campaign_state["last_updated"]
+    }
+
 
 if __name__ == "__main__":
 
