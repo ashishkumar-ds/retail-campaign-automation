@@ -301,12 +301,6 @@ def run_campaign(
             "No eligible customers found."
         )
 
-    targeted_households = (
-        target_customers["household_key"]
-        .astype(str)
-        .tolist()
-    )
-
     if test_mode:
 
         api_status = "TEST_MODE"
@@ -336,9 +330,6 @@ def run_campaign(
             "Age 45-54 | "
             "Income 50-74K | "
             "2 Adults No Kids"
-        ),
-        "sample_targeted_households": (
-            targeted_households[:10]
         ),
         "timing": "12 PM - 6 PM",
         "benchmark_sales_uplift": (
