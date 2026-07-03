@@ -6,7 +6,7 @@ This folder contains execution output samples from a live Campaign 18 automation
 
 ## n8n Workflow Execution
 
-**File:** [`n8n_workflow_execution.png`](https://github.com/ashishkumar-ds/retail-campaign-automation-with-n8n/blob/main/outputs/n8n%20workflow%20execution.jpg)
+**File:** [`n8n_workflow_execution.jpg`](https://github.com/ashishkumar-ds/retail-campaign-automation-with-n8n/blob/main/outputs/n8n%20workflow%20execution.jpg)
 
 Shows the 7-node n8n workflow after a successful campaign run. The execution path follows: Schedule Trigger → Run Campaign API → Execution Successful? → Advance Phase → Prepare Audit Log → Send Gmail. The false branch (Failure Log) is visible but inactive, confirming the run completed without errors.
 
@@ -32,7 +32,7 @@ Shows the structured JSON output returned by the `/run-campaign` endpoint after 
 
 ## Stakeholder Email Alert
 
-**File:** [`stakeholder_email.png`](https://github.com/ashishkumar-ds/retail-campaign-automation-with-n8n/blob/main/outputs/stakeholder%20email.jpg)
+**File:** [`stakeholder_email.jpg`](https://github.com/ashishkumar-ds/retail-campaign-automation-with-n8n/blob/main/outputs/stakeholder%20email.jpg)
 
 Shows the automated Gmail notification sent by n8n after the Pilot phase completed successfully. The email confirms:
 
