@@ -116,14 +116,13 @@ This is a portfolio-scale system built on a single historical dataset, not a liv
 ```bash
 dunnhumby-campaign-automation/
 │
-├── datasets/              # Static source datasets (CSV/Excel) from Dunnhumby
+├── datasets/          # Static source datasets (CSV/Excel) from Dunnhumby
+├── outputs/           # Workflow execution output, API response, and stakeholder email samples
 │
-├── presentation/          # Executive presentation deck for hiring managers and stakeholders
-│
-├── main.py                # FastAPI app: store scoring, eligibility, campaign logic
-├── render.yaml            # Render deployment configuration
-├── requirements.txt       # Python dependencies
-├── runtime.txt            # Python runtime version for Render
+├── main.py            # FastAPI app: store scoring, eligibility, campaign logic
+├── render.yaml        # Render deployment configuration
+├── requirements.txt   # Python dependencies
+├── runtime.txt        # Python runtime version for Render
 ├── .gitignore
 └── README.md
 ```
