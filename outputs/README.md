@@ -14,7 +14,7 @@ Shows the 7-node n8n workflow after a successful campaign run. The execution pat
 
 ## API Response
 
-**File:** `api_response.png`
+**File:** [`api_response.jpg`](https://github.com/ashishkumar-ds/retail-campaign-automation-with-n8n/blob/main/outputs/api%20response.jpg)
 
 Shows the structured JSON output returned by the `/run-campaign` endpoint after a Pilot phase execution. Key fields visible:
 
