@@ -8,7 +8,7 @@
 
 This project operationalizes the findings from the Retail Store Performance Analysis by building an **end-to-end campaign automation system** across 85 eligible underperforming stores. Using **FastAPI, n8n, and Brevo**, the system automates store eligibility scoring, customer targeting, campaign delivery, audit logging, and stakeholder reporting — replacing a fully manual, per-store analyst process with a single scheduled trigger.
 
-Validated on a pilot at Store 289: **11% sales uplift, 278.7% net ROI over 60 days**.
+Validated on a pilot at Store 289: **+10.8% sales uplift, 278.7% net ROI over 55 days**.
 
 ---
 
@@ -95,7 +95,7 @@ Phase eligibility is determined by `filter_stores_by_phase()` in `main.py` using
 This is a portfolio-scale system built on a single historical dataset, not a live production deployment.
 
 - **In-memory state**: campaign phase and audit log reset on server restart. In production this would persist to a database
-- **Benchmark validation**: the 10.7% uplift threshold is hardcoded from Campaign 18 historical results, not computed from live run data
+- **Benchmark validation**: the 10.8% uplift threshold is hardcoded from Campaign 18 historical results, not computed from live run data
 - **Synthetic emails**: customer emails are generated as `household_key@campaign18.com` and do not represent real CRM contacts
 - **No retry logic**: failed runs are surfaced as errors but not automatically retried
 
