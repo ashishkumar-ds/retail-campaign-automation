@@ -6,11 +6,8 @@
 
 ## Project Summary
 
-This project operationalizes the findings from the Retail Store Performance Analysis by building an **end-to-end campaign automation system** across 85 eligible underperforming stores. Using **FastAPI, n8n, and Brevo**, the system automates store eligibility scoring, customer targeting, campaign delivery, audit logging, and stakeholder reporting — replacing a fully manual, per-store analyst process with a single scheduled trigger.
+This project operationalizes the findings from the Retail Store Performance Analysis by building an **end-to-end campaign automation system** across 85 eligible underperforming stores. Using **FastAPI, n8n, and Brevo**, the system automates store eligibility scoring, customer targeting, campaign delivery, audit logging, and stakeholder reporting, replacing a fully manual, per-store analyst process with a single scheduled trigger.
 
-Validated on a pilot at Store 289: **+10.8% sales uplift, 278.7% net ROI over 55 days**.
-
----
 
 ## Problem Statement
 
