@@ -1,13 +1,3 @@
-"""
-Retail Campaign Automation System
---------------------------------
-Render-ready FastAPI application for retail campaign automation.
-
-Architecture:
-GitHub Raw CSV → FastAPI → Store Rollout Logic →
-Customer Segmentation → Brevo → n8n Cloud
-"""
-
 import os
 from datetime import datetime
 
